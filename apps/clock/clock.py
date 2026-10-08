@@ -6,7 +6,7 @@ class Clock:
         """
         skew_hours: Time drift within the system
         """
-
+        self.tz_name = tz
         self.tz = tz
         self._tz = ZoneInfo(tz)
         self._skew = timedelta(hours=skew_hours)
